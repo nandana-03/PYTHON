@@ -24,7 +24,7 @@ def pw():
     for i in password:
         org+=i
 
-    label.config(text=f"Your newly generated password is {org}")
+    label.config(text=f"The password is {org}")
 
 
 window=tk.Tk()
@@ -37,14 +37,14 @@ Gird.rowconfigure(window,5,1)
 Gird.rowconfigure(window,10,1)
 """
 label1=tk.Label(text="Welcome to Password Generator!!",font="Georgia")
-label1.grid(row=1,column=3)
+label1.grid(row=1, padx=100, pady=10, column=3,sticky="W")
 
 
 button=tk.Button(text="Generate password",font="Georgia",command=pw)
-button.grid(row=5,column=3)
+button.grid(row=5,column=3,pady=30)
 
 
-label=tk.Label(text="Password here",font="Georgia")
+label=tk.Label(text="",font="Georgia",bg='#022e64',fg="white")
 label.grid(row=10,column=3)
 
 
