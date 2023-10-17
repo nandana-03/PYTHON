@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Reservation</title>
+    </head>
+    <body>
+        <h1>Travel Reservation Form</h1>
+        <h3>* denotes mandatory</h3>
+        <form action="">
+            <label for="name">Full name*:</label><br>
+            <input type="text" placeholder="FirstName LastName"><br><br>
+
+            <label for="email">Email address*:</label><br>
+            <input type="text"><br><br>
+
+            <label for="tour">Select Tour Package*:</label><br>
+            <select class="tour" id="tour">
+                <option value="Goa">Goa</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Kashmir">Kashmir</option>
+            </select><br><br>
+
+            <label for="date">Arrival date*:</label><br>
+            <input type="text" placeholder="m/d/y"><br><br>
+
+            <label for="person">Number of persons*:</label><br>
+            <input type="text"><br><br>
+
+            <label>What would you want to avail?*</label><br>
+            <input type="checkbox" name="boarding" id="boarding">
+            <label for="boarding">Boarding</label><br>
+            <input type="checkbox" name="fooding" id="fooding">
+            <label for="fooding">Fooding</label><br>
+            <input type="checkbox" name="sightseeing" id="sightseeing">
+            <label for="sightseeing">Sight Seeing</label><br><br>
+
+            <label for="discount">Discount Coupon code:</label><br>
+            <input type="text"><br><br>
+
+            <label type="terms">Terms and conditions*:</label><br>
+            <input type="radio" name="agree" id="agree">
+            <label for="agree">I agree</label>
+            <input type="radio" name="disagree" id="disagree">
+            <label for="disagree">I disagree</label><br><br>
+
+            <input type="submit" value="Complete Reservation">
+        </form>
+    </body>
+</html>
